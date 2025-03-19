@@ -1,0 +1,129 @@
+/* Importation d'une police western */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Special Elite', cursive;
+    background: #8F422A;
+    color: #4E2A14;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Ajout du style pour le logo */
+.logo-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+/* ✅ Correction : S'assurer que l'input est interactif */
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #8B4513;
+    background: #FAE0C3;
+    color: #4E2A14;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    display: inline-block !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+input:focus {
+    outline: 3px solid #FFD700;
+    background: #FFF5D7;
+}
+
+/* Conteneur style "vieille affiche" */
+.container {
+    background: #F4E1C1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: 10px solid #8B4513;
+    max-width: 500px;
+    width: 90%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres avec effet vintage */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8B0000;
+}
+
+/* Texte énigme */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* ✅ Correction : Bouton cliquable sans restriction */
+button {
+    background: #8B4513;
+    color: #FFD700;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #4E2A14;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Special Elite', cursive;
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    display: inline-block !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+button:hover {
+    background: #A0522D;
+    color: white;
+}
+
+/* Message validation / erreur */
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Ajout d’un effet de brûlure sur les bords */
+.container {
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: -10px; left: -10px; right: -10px; bottom: -10px;
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    opacity: 0.3;
+    border-radius: 10px;
+}
